@@ -22,7 +22,7 @@ rm -rf testy-lichess-dev testy-beta-docker
 # /home/schlawg/testy-beta-docker is currently hard coded in the nginx.conf
 # so we'll need to fix that before this actually works for a different user.
 # might need a dedicated testy user
-git clone https://github.com/schlawg/testy-lichess-dev testy-beta-docker
+git clone https://github.com/schlawg/testy-lichess-dev
 
 ln -sf testy-lichess-dev testy-beta-docker
 
