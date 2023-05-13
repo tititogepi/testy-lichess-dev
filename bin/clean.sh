@@ -2,8 +2,8 @@
 # --force argument to force a clean database. we assume that you store the db
 # files in your home directory.
 
-if [ -d "$HOME/testy" ]; then
-  cd $HOME/testy
+if [ -d "$HOME/testy-lichess-dev" ]; then
+  cd $HOME/testy-lichess-dev
   docker-compose down
 fi
 
@@ -17,16 +17,16 @@ fi
 cd "$HOME"
 docker rmi $(docker images -q) # remove all docker images, this is "clean.sh" damnit!
 
-rm -rf testy-lichess-dev testy-beta-docker testy
+rm -rf testy-lichess-dev testy-beta-docker
 
 # /home/schlawg/testy-beta-docker is currently hard coded in the nginx.conf
 # so we'll need to fix that before this actually works for a different user.
 # might need a dedicated testy user
 git clone https://github.com/schlawg/testy-lichess-dev testy-beta-docker
 
-ln -sf testy testy-beta-docker
+ln -sf testy-lichess-dev testy-beta-docker
 
-cd testy
+cd testy-lichess-dev
 
 ./build.sh
 
