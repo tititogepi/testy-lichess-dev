@@ -2,10 +2,10 @@
 
 # this example script rebuilds and rebuilds the lila container with the latest from git
 
-export UID="$(id -u)"
-export GID="$(id -g)"
+# export UID="$(id -u)"
+# export GID="$(id -g)"
 
-export ORIGIN=https://testy.lichess.dev
+# export ORIGIN=https://testy.lichess.dev
 
 cd $HOME/testy
 

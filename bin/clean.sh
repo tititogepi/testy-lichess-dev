@@ -31,8 +31,12 @@ cd testy-lichess-dev
 ./build.sh
 
 if [ "$INITDB" ]; then
-  # customize these passwords in your home directory on testy, not in the repo
+  # customize these passwords by modifying this script in your home directory on 
+  # testy, not in your forked repo!
+  #
+  # example:
   # ./initdb.sh user_password admin_password
-  # otherwise they're gonna be the defaults
+  #
+  # otherwise you're getting the weak spamdb defaults
   ./initdb.sh
 fi
