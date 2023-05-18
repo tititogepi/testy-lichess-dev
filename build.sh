@@ -23,4 +23,4 @@ cp conf/lila.conf lila/conf/application.conf
 
 docker-compose up -d
 
-docker compose exec lila bash -c "/lila/ui/build -p"
+docker compose exec lila bash -c "/lila/ui/build"

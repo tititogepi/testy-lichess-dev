@@ -14,4 +14,4 @@ pushd lila
 git pull
 popd
 docker compose up -d lila
-docker compose exec lila bash -c '/lila/ui/build -p'
+docker compose exec lila bash -c '/lila/ui/build'
