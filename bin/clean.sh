@@ -1,5 +1,5 @@
 # here is an example script that builds everything from scratch. use the 
-# --force argument to force a clean database. we assume that you store the db
+# --force argument to force a clean database. this assumes that you store the db
 # files in your home directory.
 
 if [ -d "$HOME/testy-lichess-dev" ]; then
@@ -19,7 +19,7 @@ docker rmi $(docker images -q) # remove all docker images, this is "clean.sh" da
 
 rm -rf testy-lichess-dev testy-beta-docker
 
-# /home/schlawg/testy-beta-docker is currently hard coded in the nginx.conf
+# /home/schlawg/testy-beta-docker is currently hard coded in the khiaw nginx.conf
 # so we'll need to fix that before this actually works for a different user.
 # might need a dedicated testy user
 git clone https://github.com/schlawg/testy-lichess-dev
