@@ -82,6 +82,7 @@ services:
     networks:
       - lila-network
     volumes:
+      - ./lila:/lila
       - ./lila-db-seed:/lila-db-seed
     working_dir: /lila-db-seed
 
