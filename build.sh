@@ -3,7 +3,7 @@
 # deploys are not handled here.
 
 # change the URL in the next line to your retrieve your fork/branch
-git clone https://github.com/schlawg/lila
+git clone https://github.com/tititogepi/testy-lichess-dev
 
 # same for any of these you want to customize
 git clone --depth 1 https://github.com/lichess-org/lila-db-seed
